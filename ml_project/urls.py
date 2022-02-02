@@ -20,6 +20,5 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/',include('ml_app.urls')),
     path('prediction/',include('model_app.urls')),
 ]
