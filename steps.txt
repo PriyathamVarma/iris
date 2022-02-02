@@ -1,0 +1,93 @@
+# This page explains about the steps involved in creating a django application, model devlopment and deployment.
+
+# Create a virtual environment
+
+1. python3 -m venv venv
+2. source venv/bin/activate
+3. pip3 install django
+4. django-admin startproject ml_project
+5. cd ml_project
+6. django-admin startapp ml_app  
+
+**** python manage.py runserver ****
+
+7. In settings.py of ml_project add ml_app
+8. In views.py enter a function that have request as argument that can return some text
+9. in views.py add from django.http import HttpResponse
+10. add the path in urls.py in ml_project along with imports of views from ml_app
+
+**** Other way of showing the urls ****
+
+11. Create an urls.py inside the ml_app
+12. include all the imports
+13. give the include refernece to the urls.py in ml_app from urls.py in ml_project along with adding include imports in ml_project urls.py
+
+**** creating templates folder ****
+
+14. create templates folder in ml_app
+15. in settings.py give the base_dir path for templates
+16. add this path to the templates list in dir 
+
+
+**** templating ****
+
+17. Create an index file inside templates
+18. in the views give the redirection to the index.html using render
+
+**** ML model ****
+
+19. Install jupyter notebook
+20. pip3 install jupyter
+21. go to notebooks directory(new folder)
+22. enter jupyter notebook(this redirects to a new jupyter notebook)
+23. use colab for better performance
+24. create a new folder at root directory called savedModels
+25. the model saved in colab using joblib can be inserted in saved models
+
+26. create another app folder named model_app
+27. follow the same procedure for getting to the index.html
+28. pip3 install joblib,pandas, scikit-learn
+29. load the model
+
+**** creating a db ****
+
+30. creating a class in models.py in model_app
+31. python manage.py makemigrations and python manage.py migrate  
+32. register the class inside admin.py of model_app
+33. create super user using python manage.py createsuperuser
+
+**** creating a form ****
+
+34. create a forms.py inside model_app.py
+35. inside forms.py create FormName and FormNamedata
+36. inside views.py write the logic
+37. redirect the daat to index.html using views.py
+
+
+**** deploying the model ****
+
+38. add the project files to github HttpResponse
+
+**** deploying ****
+
+39. install gunicron using conda install or pip
+40. touch Procfile
+41. touch runtime.txt
+42. in procfile enter web:gunicorn ml_project.wsgi
+43. look for python version with python --version and enter it inside runtime.txt as python-version number(eg:python-2.1.0)
+44. enter conda list -e > requirements.txt for requirements.txt with conda
+                              (or)
+44. pip freeze > requirements.txt     
+
+45. add all files to the git branch and give access to heroku
+
+**** build fails ****
+
+46. create static folder inside root folder and create a dummy file
+46.1 add pip install whitenoise
+46.2 add whitenoise middleware in middlewares as the second one after security middleware
+46.3 check with python manage.py collectstatic
+
+47. conda install pip
+48. pip list --format=freeze > requirements.txt
+
