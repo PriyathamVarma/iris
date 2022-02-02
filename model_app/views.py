@@ -6,7 +6,7 @@ from model_app.models import Leaf
 # forms imports
 from . import forms
 
-model = load('../savedModels/RandomForestClassifier.joblib')
+model = load('./savedModels/RandomForestClassifier.joblib')
 
 # Create your views here.
 def predictor(request):
