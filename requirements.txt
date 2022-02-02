@@ -1,44 +1,17 @@
-# This file may be used to create an environment using:
-# $ conda create --name <env> --file <this file>
-# platform: osx-64
-asgiref=3.4.1=pyhd3eb1b0_0
-blas=1.0=mkl
-ca-certificates=2021.10.26=hecd8cb5_2
-certifi=2021.10.8=py39hecd8cb5_2
-django=3.2.5=pyhd3eb1b0_0
-gunicorn=20.1.0=py39hecd8cb5_0
-intel-openmp=2021.4.0=hecd8cb5_3538
-joblib=1.1.0=pyhd3eb1b0_0
-krb5=1.19.2=hcd88c3b_0
-libcxx=12.0.0=h2f01273_0
-libedit=3.1.20210910=hca72f7f_0
-libffi=3.3=hb1e8313_2
-libgfortran=3.0.1=h93005f0_2
-libpq=12.9=h1c9f633_1
-llvm-openmp=12.0.0=h0dcd299_1
-mkl=2021.4.0=hecd8cb5_637
-mkl-service=2.4.0=py39h9ed2024_0
-mkl_fft=1.3.1=py39h4ab4a9b_0
-mkl_random=1.2.2=py39hb2f4e1b_0
-ncurses=6.3=hca72f7f_2
-numpy=1.21.2=py39h4b4dc7a_0
-numpy-base=1.21.2=py39he0bd621_0
-openssl=1.1.1m=hca72f7f_0
-pip=21.2.4=py39hecd8cb5_0
-psycopg2=2.8.6=py39hbcfaee0_1
-python=3.9.7=h88f2d9e_1
-pytz=2021.3=pyhd3eb1b0_0
-readline=8.1.2=hca72f7f_1
-scikit-learn=1.0.2=py39hae1ba45_1
-scipy=1.7.3=py39h8c7af03_0
-setuptools=58.0.4=py39hecd8cb5_0
-six=1.15.0=py_0
-sqlite=3.37.0=h707629a_0
-sqlparse=0.4.1=py_0
-threadpoolctl=2.1.0=pyh5ca1d4c_0
-tk=8.6.11=h7bc2e8c_0
-typing_extensions=3.10.0.2=pyh06a4308_0
-tzdata=2021e=hda174b7_0
-wheel=0.37.1=pyhd3eb1b0_0
-xz=5.2.5=h1de35cc_0
-zlib=1.2.11=h4dc903c_4
+asgiref @ file:///tmp/build/80754af9/asgiref_1625643473416/work
+certifi==2021.10.8
+Django @ file:///tmp/build/80754af9/django_1625585912945/work
+gunicorn @ file:///opt/concourse/worker/volumes/live/f7b39e0f-a194-41b6-4722-90b8829755e9/volume/gunicorn_1617120639810/work
+joblib @ file:///tmp/build/80754af9/joblib_1635411271373/work
+mkl-fft==1.3.1
+mkl-random @ file:///opt/concourse/worker/volumes/live/0cda23d8-7460-44b2-7e5d-3c76a8a0ca7e/volume/mkl_random_1626186083266/work
+mkl-service==2.4.0
+numpy @ file:///opt/concourse/worker/volumes/live/21fb9bb9-9731-4901-4403-2bc27cc2cc33/volume/numpy_and_numpy_base_1634106739792/work
+psycopg2 @ file:///opt/concourse/worker/volumes/live/7541fe58-2a45-4073-5d69-313e733fc729/volume/psycopg2_1612298592535/work
+pytz==2021.3
+scikit-learn @ file:///opt/concourse/worker/volumes/live/cffa5efe-beec-4a37-5774-350794e43990/volume/scikit-learn_1642617139916/work
+scipy @ file:///opt/concourse/worker/volumes/live/9284487f-601d-4bc3-5556-535c4949d341/volume/scipy_1641557769615/work
+six==1.15.0
+sqlparse @ file:///tmp/build/80754af9/sqlparse_1602184451250/work
+threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
+typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1631814937681/work
